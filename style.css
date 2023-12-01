@@ -1,0 +1,89 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ff4c68;
+  margin-bottom: 20px;
+}
+
+.father {
+  display: block;
+}
+
+.son {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.dog {
+  height: 200px;
+  width: 100%;
+  border-radius: 7%;
+  float: left;
+}
+
+.soccer-ball {
+  height: 200px;
+  width: 100%;
+  border-radius: 7%;
+  float: left;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.par {
+  font-size: 15px;
+}
+
+.btn {
+  background-color: #ff4c68;
+  color: white;
+  background-image: #ef8172;
+}
+
+.container, .container-md, .container-sm {
+  max-width: 100%;
+}
+
+@media (max-width:700px) {
+  .son {
+    display: grid;
+    grid-template-rows: repeat(2,200px);
+    width: 50%;
+    margin: 100px auto 0 auto;
+  }
+}
